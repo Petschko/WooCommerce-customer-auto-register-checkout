@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Register after checkout
- * Plugin URI: -
+ * Plugin Name: WooCommerce Customer register after checkout
+ * Plugin URI: https://github.com/Petschko/WooCommerce-customer-auto-register-checkout
  * Description: Creates an Wordpress-Account for the Customer after the Woo-Checkout
  * Version: 1.0.0
  * Author: Peter Dragicevic
