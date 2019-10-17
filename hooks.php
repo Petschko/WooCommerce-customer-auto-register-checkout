@@ -9,6 +9,7 @@
 
 namespace Petschko\Wordpress\WooCommerce\AutoRegister;
 
+use stdClass;
 use WC_Order;
 use WP_User;
 
@@ -139,8 +140,9 @@ function updateDisplayName($userId, $displayName) {
 	if(! $userId || ! $displayName)
 		return;
 
-	wp_update_user(array(
-		'ID' => $userId,
-		'display_name' => $displayName
-	));
+	$data = new stdClass;
+	$data->ID = $userId;
+	$data->display_name = $displayName;
+
+	wp_update_user($data);
 }
